@@ -4,6 +4,11 @@ let users = [
     email: "admin@gmail.com",
     pass: "admin123",
     usertype: "admin"
+  },
+  {
+    email: "user@gmail.com",
+    pass: "user123",
+    usertype: "student"
   }
 ];
 localStorage.setItem("users", JSON.stringify(users));
