@@ -62,12 +62,3 @@ function showData() {
     `;
 }
 showData();
-
-let users = [
-  {
-    email: "admin@gmail.com",
-    pass: "admin123",
-    usertype: "Admin"
-  }
-];
-localStorage.setItem("users", JSON.stringify(users));
