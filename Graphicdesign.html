@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LMS NITW</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+
+</head>
+<style>
+    /* General Styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    header {
+        background-color: rgb(4, 32, 58);
+  height: 18vh;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: white;
+  justify-content: space-around;
+}
+
+.logo {
+  height: 15vh;
+  width: 15wh;
+}
+
+.search {
+  height: 1vh;
+  width: 10vw;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px;
+}
+
+    nav {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+
+    .course {
+        width: 100%;
+        height: 100%;
+        padding: 5%;
+    }
+
+    .html {
+        width: 90%;
+        height: 500px;
+        margin-left: 5%;
+    }
+
+    iframe {
+        float: left;
+        width: 500px;
+        height: 350px;
+        padding: 30px;
+    }
+
+    .heading {
+        font-size: 28px;
+        font-weight: bolder;
+        padding-left: 40px;
+        padding-top: 40px;
+    }
+
+    .commment {
+        height: 100px;
+        width: 500px;
+    }
+
+    .btn {
+        height: 30px;
+        width: 50px;
+        color: white;
+        border-radius: 6px;
+        background-color: #025aa5;
+        margin-left: 20px;
+    }
+
+    footer {
+        background-color: rgb(4, 32, 58);
+        color: white;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <a href="../index.html"><img src="img/logo.png" class="logo" alt="logo"></a>
+        <div>
+            <h1>National Institute of Technology, Warangal</h1>
+            <div class="dynamic">
+                <span></span>
+
+            </div>
+        </div>
+        <div>
+            <h4>National Institute of Technology Campus,</h4>
+            <h5> Hanamkonda, Telangana 506004</h5>
+        </div>
+        <div>
+            <a href="https://maps.app.goo.gl/ndwVCKtB4cybbbLCA"><img src="img/marker_50px.png" alt="NITW"></a>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="courses.html">Go Back</a></li>
+        </ul>
+        </nav>
+
+    <!-- Main Content Section -->
+    <section id="courses">
+        <div class="html">
+            <div class="heading">Graphic Design</div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/e_dv7GBHka8?si=meUsvy8Tx4A-lszd"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div><br>
+                <h3>Description:</h3><br>
+                <p>Graphic design is the art and practice of creating visual content to communicate messages. It combines creativity and technology to convey ideas effectively through various forms of media.
+
+                </div> <br>
+            <textarea name="comment" class="commment" placeholder="Comments here..."></textarea><button type="button"
+                class="btn">Send</button>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Learning Management System. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

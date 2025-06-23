@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NITW LMS - Login Page</title>
+    <link rel="stylesheet" href="./Styles/style.css" />
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+  </head>
+  <body>
+    
+    <header class="top">
+      <a href="../index.html"><img src="img/logo.png" class="logo" alt="logo"></a>
+      <div>
+          <h1>National Institute of Technology, Warangal</h1>
+          <div class="dynamic">
+              <span></span>
+
+          </div>
+      </div>
+      <div>
+          <h4>National Institute of Technology Campus,</h4>
+          <h5> Hanamkonda, Telangana 506004</h5>
+      </div>
+      <div>
+          <a href="https://maps.app.goo.gl/ndwVCKtB4cybbbLCA"><img src="img/marker_50px.png" alt="NITW"></a>
+      </div>
+    </header>
+    <nav>
+      <ul>
+          <li><a href="courses.html">Courses</a></li>
+      </ul>
+    </nav>
+
+      
+      <div class="login-page">
+        
+        <form class="form">
+          <label for="email">Email</label><br />
+          <input type="email" id="email" placeholder="Email" /><br />
+          <label for="password">Password</label><br />
+          <input
+            type="password"
+            id="password"
+            placeholder="Min 8 characters Password"
+          /><br />
+          <label for="user-type">Select user</label><br />
+          <select id="user">
+            <option value="student">Student</option>
+            <option value="admin">Admin</option></select
+          ><br />
+          <input type="checkbox" id="remember" />
+          <label for="remember">Remember me</label>
+          <button class="login" onclick="loginUser()">LOG IN</button>
+          
+        </form>
+      </div>
+    </div>
+    
+    <!-- Footer Section -->
+    <footer>
+      <div>
+          <p>&copy; 2024 Learning Management System. All rights reserved</p>
+        </div>
+  </footer>
+  <script src="./Scripts/main.js"></script>
+  </body>
+</html>

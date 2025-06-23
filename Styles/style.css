@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.login-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #f3f4f6;
+  background-image: url(Login-scaled.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-img {
+  height: 50vh;
+  width: 50%;
+}
+
+.form {
+  font-size: 20px;
+  color: white;
+  margin: 20px;
+  background-color: transparent;
+  width: 30%;
+  padding: 22px;
+  border-radius: 7px;
+}
+
+input,
+select {
+  font-size: 16px;
+  padding: 10px;
+  background-color: #e8f0fe;
+  border-radius: 7px;
+  border: none;
+  width: 100%;
+  margin: 6px 0 20px 0;
+  border: 0.5px solid rgb(193, 190, 190);
+}
+
+#remember {
+  width: 20px;
+}
+
+
+button {
+  padding: 15px 30px;
+  border-radius: 7px;
+  border: none;
+  background-color: green;
+  color: white;
+  font-weight: 600;
+  margin-left: 15px;
+}
+
+form>div {
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+}
+
+form>div>span {
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* Head Rebon section */
+.top {
+  background-color: rgb(4, 32, 58);
+}
+
+.head-rbn {
+  background-color: rgb(4, 32, 58);
+  height: 25px;
+  line-height: 25px;
+  width: 100%;
+}
+
+
+.head-rbn img {
+  float: left;
+  height: 22px;
+  width: 22px;
+  position: relative;
+  left: 45%;
+  margin-left: 30px;
+}
+
+.slide {
+  background-image: url('nitw.gif');
+  background-repeat: no-repeat;
+  height: 95vh;
+  width: 98%;
+  margin: 20px;
+  border-radius: 10px;
+  background-size: cover;
+
+}
+
+header {
+  height: 18vh;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: white;
+  justify-content: space-around;
+}
+
+.logo {
+  height: 15vh;
+  width: 15wh;
+}
+
+.search {
+  height: 1vh;
+  width: 10vw;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px;
+}
+
+/* footer  */
+footer {
+  height: 50px;
+  background-color: rgb(4, 32, 58);
+  color: white;
+  font-size: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 40vh; */
+}
+
+.foot {
+  width: 80%;
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.foot div {
+  width: 50px;
+}
+
+.foot li {
+  list-style: none;
+  line-height: 2;
+}
+
+.foot a {
+  text-decoration: none;
+  color: white;
+}
+
+.foot a:hover {
+  color: red;
+}
+
+
+nav {
+  background-color: #163f65;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}

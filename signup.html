@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NITW LMS - Course</title>
+    <link rel="stylesheet" href="./Styles/signup.css" />
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+  </head>
+  <body>
+    <header class="top">
+      <a href="../index.html"><img src="img/logo.png" class="logo" alt="logo"></a>
+      <div>
+          <h1>National Institute of Technology, Warangal</h1>
+          <div class="dynamic">
+              <span></span>
+
+          </div>
+      </div>
+      <div>
+          <h4>National Institute of Technology Campus,</h4>
+          <h5> Hanamkonda, Telangana 506004</h5>
+      </div>
+      <div>
+          <a href="https://maps.app.goo.gl/ndwVCKtB4cybbbLCA"><img src="img/marker_50px.png" alt="NITW"></a>
+      </div>
+    </header>
+    <div class="signup-page">
+      <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="" />
+      <form class="form">
+        <label for="email">Email</label><br />
+        <input type="email" id="email" /><br />
+        <label for="password">Password</label><br />
+        <input
+          type="password"
+          id="password"
+          placeholder="Min 8 characters"
+        /><br />
+        <label for="user-type">Select user</label><br />
+        <select id="user">
+          <option value="student">Student</option>
+          <option value="admin">Admin</option></select
+        ><br />
+        <button class="signup" onclick="signupUser()">SIGN UP</button>
+        <div>
+          <span id="registered">Already registered?</span
+          ><a href="./index.html">Log In.</a>
+        </div>
+      </form>
+    </div>
+    <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Learning Management System. All rights reserved.</p>
+  </footer>
+  
+  </body>
+</html>
+<script src="./Scripts/signup.js"></script>

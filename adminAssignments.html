@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NITW LMS - Admin Assignments</title>
+    <link rel="stylesheet" href="./Styles/adminAssignments.css" />
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+  </head>
+  <body>
+    <header class="top">
+      <a href="../index.html"><img src="img/logo.png" class="logo" alt="logo"></a>
+      <div>
+          <h1>National Institute of Technology, Warangal</h1>
+          <div class="dynamic">
+              <span></span>
+
+          </div>
+      </div>
+      <div>
+          <h4>National Institute of Technology Campus,</h4>
+          <h5> Hanamkonda, Telangana 506004</h5>
+      </div>
+      <div>
+          <a href="https://maps.app.goo.gl/ndwVCKtB4cybbbLCA"><img src="img/marker_50px.png" alt="NITW"></a>
+      </div>
+    </header>
+    <div class="nav">
+      <div class="elements">
+        <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="" />
+        <a href="./admin.html"><p>Users</p></a>
+        <a href="./lecture.html"><p>Lectures</p></a>
+        <a href="#" class="active"><p>Assignments</p></a>
+        <a href="assignmentsList.html"><p>Submissions</p></a>
+      </div>
+      <div>
+        <div class="guest"></div>
+        <a href="./index.html">Logout</a>
+      </div>
+    </div>
+    <div class="title">
+      <h2>Assignments</h2>
+    </div>
+    <div class="add">
+      <p>Add lectures</p>
+      <form>
+        <div>
+          <label for="title">Title</label><br />
+          <select id="title">
+            <option value="Classes">Classes</option>
+            <option value="DSA">DSA</option>
+            <option value="Mechine Learning">Mechine Learning</option>
+            <option value="OOPS">OOPS</option>
+            <option value="Functions">Functions</option>
+            <option value="Web Development">Web Development</option>
+            <option value="AI">AI</option>
+            <option value="Computer Organisation">Computer Organisation</option>
+            <option value="SQT">SQT</option>
+            <option value="Problem Solving">Problem Solving</option>
+            <option value="Constructor Function">Constructor Function</option>
+            <option value="Discrete Mathematics">Discrete Mathematics</option>
+          </select>
+        </div>
+        <div>
+          <label for="type">Category</label><br />
+          <select id="type">
+            <option value="coding">Coding</option>
+            <option value="dsa">Dsa</option>
+            <option value="Theory">Theory</option>
+            <option value="Proofs">Proofs</option>
+          </select>
+        </div>
+        <div> 
+          <label for="instructor">Instructor</label><br />
+          <select id="instructor">
+            <option value="Dr. Srinivas"><b>Dr. Srinivas</b></option>
+            <option value="Nidhi Sonkar"><b>Nidhi Sonkar</b></option>
+            <option value="Raju Bhukaya"><b>Raju Bhukaya</b></option>
+            <option value="Dr. J. Pranitha"><b>Dr. J. Pranitha</b></option>
+          </select>
+        </div>
+        <div>
+          <label for="schedule">Scheduled</label><br />
+          <input type="date" id="schedule" />
+        </div>
+        <div>
+          <label for="file">Upload Assignment File</label><br />
+          <input type="file" id="file" accept=".pdf, .doc, .docx, .txt" />
+        </div> 
+        <div>
+          <label for="add">Add lecture</label><br />
+          <button onclick="addLecture()">Add</button>
+        </div>
+      </form> 
+    </div>
+    <div class="section">
+      <div class="lectures"></div>
+    </div>
+    <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Learning Management System. All rights reserved.</p>
+  </footer>
+  
+  </body>
+</html>
+<script src="./Scripts/adminAssignments.js"></script>

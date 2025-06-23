@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="Styles/adminAssignments.css">
+<link rel="stylesheet" href="Styles/assignmentsList.css">
+</head>
+
+<body>
+  <header class="top">
+    <img src="img/logo.png" class="logo" alt="logo">
+    <div>
+      <h1>National Institute of Technology, Warangal</h1>
+      <div class="dynamic">
+        <span></span>
+
+      </div>
+    </div>
+    <div>
+      <h4>National Institute of Technology Campus,</h4>
+      <h5> Hanamkonda, Telangana 506004</h5>
+    </div>
+    <div>
+      <a href="https://maps.app.goo.gl/ndwVCKtB4cybbbLCA"><img src="img/marker_50px.png" alt="NITW"></a>
+    </div>
+  </header>
+  <div class="nav">
+    <div class="elements">
+      <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="" />
+      <a href="./admin.html">
+        <p>Users</p>
+      </a>
+      <a href="./lecture.html">
+        <p>Lectures</p>
+      </a>
+      <a href="adminAssignments.html" >
+        <p>Assignments</p>
+      </a>
+      <a href="#" class="active">
+        <p>Submissions</p>
+      </a>
+    </div>
+    <div>
+      <div class="guest"></div>
+      <a href="./index.html">Logout</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1 class="heading">Admin Panel - Uploaded Solutions</h1>
+    <div class="stats" id="stats">
+      Total Students: <span id="totalStudents">5</span> | Students Submitted: <span id="submittedStudents">0</span>
+    </div>
+    <div class="assignment-list" id="assignmentList"></div>
+  </div>
+  <script src="Scripts/assignmentsList.js"></script>
+
+</body>
+
+</html>

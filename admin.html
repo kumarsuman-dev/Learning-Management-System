@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NITW LMS - Admin</title>
+    <link rel="stylesheet" href="./Styles/admin.css" />
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+  </head>
+  <body>
+    <header class="top">
+      <a href="../index.html"><img src="img/logo.png" class="logo" alt="logo"></a>
+      <div>
+          <h1>National Institute of Technology, Warangal</h1>
+          <div class="dynamic">
+              <span></span>
+
+          </div>
+      </div>
+      <div>
+          <h4>National Institute of Technology Campus,</h4>
+          <h5> Hanamkonda, Telangana 506004</h5>
+      </div>
+      <div>
+          <a href="https://maps.app.goo.gl/ndwVCKtB4cybbbLCA"><img src="img/marker_50px.png" alt="NITW"></a>
+      </div>
+    </header>
+    <div class="nav">
+      <div class="elements">
+        <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="" />
+        <a href="#" class="active"><p>Users</p></a>
+        <a href="lecture.html"><p>Lectures</p></a>
+        <a href="adminAssignment.html"><p>Assignments</p></a>
+        <a href="assignmentsList.html"><p>Submissions</p></a>
+      </div>
+      <div>
+        <div class="guest"></div>
+        <a href="./index.html">Logout</a>
+      </div>
+    </div>
+    <div class="title">
+      <h2>Users</h2>
+    </div>
+    <div class="add">
+      <p>Add students</p>
+      <form>
+        <input type="email" id="email" placeholder="Email" />
+        <input type="text" id="pass" placeholder="Password" />
+        <select id="type">
+          <option value="student">Student</option>
+          <option value="admin">Admin</option>
+        </select>
+        <button onclick="addStudent()">Add</button>
+      </form>
+    </div>
+    <div class="section">
+      <div class="heading">
+        <p>Email</p>
+        <p>Password</p>
+        <p>User</p>
+        <p>Remove</p>
+      </div>
+      <div class="user-list"></div>
+    </div>
+    <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Learning Management System. All rights reserved.</p>
+  </footer>
+  
+  </body>
+</html>
+<script src="./Scripts/admin.js"></script>

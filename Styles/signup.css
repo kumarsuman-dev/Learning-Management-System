@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+.signup-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f4f6;
+}
+.signup-page > img {
+  width: 190px;
+  margin-bottom: 25px;
+}
+.form {
+  background-color: #ffffff;
+  color: rgb(71, 70, 70);
+  width: 30%;
+  padding: 22px;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+input,
+select {
+  font-size: 16px;
+  padding: 10px;
+  background-color: #e8f0fe;
+  border-radius: 7px;
+  border: none;
+  width: 100%;
+  margin: 6px 0 20px 0;
+  border: 0.5px solid rgb(193, 190, 190);
+}
+#remember {
+  width: 20px;
+}
+#registered {
+  text-decoration: underline;
+}
+button {
+  padding: 9px 18px;
+  border-radius: 7px;
+  border: none;
+  background-color: green;
+  color: white;
+  font-weight: 600;
+}
+form > div {
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+}
+form > div > span {
+  margin-right: 10px;
+}
+a {
+  text-decoration: none;
+}
+
+/* Head Rebon section */
+.top {
+  background-color: rgb(4, 32, 58);
+}
+
+.head-rbn {
+  background-color: rgb(4, 32, 58);
+  height: 25px;
+  line-height: 25px;
+  width: 100%;
+}
+
+
+.head-rbn img {
+  float: left;
+  height: 22px;
+  width: 22px;
+  position: relative;
+  left: 45%;
+  margin-left: 30px;
+}
+
+.slide {
+  background-image: url('nitw.gif');
+  background-repeat: no-repeat;
+  height: 95vh;
+  width: 98%;
+  margin: 20px;
+  border-radius: 10px;
+  background-size: cover;
+  
+}
+
+header {
+  height: 18vh;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: white;
+  justify-content: space-around;
+}
+
+.logo {
+  height: 15vh;
+  width: 15wh;
+}
+
+.search {
+  height: 1vh;
+  width: 10vw;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px;
+}
+
+
+footer {
+  height: 50px;
+  background-color: rgb(4, 32, 58);
+  color: white;
+  font-size: 16px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.foot {
+  height: 40vh;
+  width: 80%;
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.foot li {
+  list-style: none;
+  line-height: 2;
+}
+
+.foot a {
+  text-decoration: none;
+  color: white;
+}
+
+.foot a:hover {
+  color: red;
+}

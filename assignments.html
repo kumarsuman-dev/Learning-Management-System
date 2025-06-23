@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NITW LMS - Assignments</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="./Styles/assignments.css" />
+  </head>
+  <body>
+    <header class="top">
+      <a href="../index.html"><img src="img/logo.png" class="logo" alt="logo"></a>
+      <div>
+          <h1>National Institute of Technology, Warangal</h1>
+          <div class="dynamic">
+              <span></span>
+
+          </div>
+      </div>
+      <div>
+          <h4>National Institute of Technology Campus,</h4>
+          <h5> Hanamkonda, Telangana 506004</h5>
+      </div>
+      <div>
+          <a href="https://maps.app.goo.gl/ndwVCKtB4cybbbLCA"><img src="img/marker_50px.png" alt="NITW"></a>
+      </div>
+    </header>
+    <div class="nav">
+      <div class="elements">
+        <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="" />
+        <a href="./user.html"><p>Lectures</p></a>
+        <a href="#" class="active"><p>Assignments</p></a>
+      </div>
+      <div>
+        <div class="guest"></div>
+        <a href="./index.html">Logout</a>
+      </div>
+    </div>
+    <div class="title">
+      <h2>Assignments</h2>
+    </div>
+    <div class="add">
+      <p>Filter assignments</p>
+      <form>
+        <div>
+          <label for="title">By title</label><br />
+          <select id="title" onchange="filterTitle()">
+            <option value="All">All</option>
+            <option value="Classes">Classes</option>
+            <option value="Import-Export">Import-Export</option>
+            <option value="Local Storage">Local Storage</option>
+            <option value="OOPS">OOPS</option> 
+            <option value="Functions">Functions</option>
+            <option value="LLD">LLD</option>
+            <option value="Closures">Closures</option>
+            <option value="Complexity Analysi">Complexity Analysis</option>
+            <option value="Fetch">Fetch</option>
+            <option value="Sorting Algorithm">Sorting Algorithm</option>
+            <option value="Constructor Function">Constructor Function</option>
+            <option value="Prototype">Prototype</option>
+          </select>
+        </div>
+        <div>
+          <label for="schedule">By scheduled date</label><br />
+          <input type="date" id="schedule" onchange="filterDate()" />
+        </div>
+        <div>
+          <label for="add">Reset filters</label><br />
+          <button onclick="resetFilter()">Reset</button>
+        </div>
+      </form>
+    </div>
+    <div class="section">
+      <div class="lectures"></div>
+    </div>
+    <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Learning Management System. All rights reserved.</p>
+  </footer>
+  
+    <script src="./Scripts/assignments.js"></script>
+  </body>
+</html>
